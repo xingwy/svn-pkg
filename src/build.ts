@@ -359,15 +359,6 @@ const diff = async (cfg: any, begin: string | number, end?: string | number) => 
         throw error && error.toString();
     }
 };
-_argparse.addArgument(["svnurl"], {type: "string", defaultValue: "", nargs: "?", help: "svn地址"});
-_argparse.addArgument(["day"],    {type: "int",    defaultValue: 7,  nargs: "?", help: "时间段"});
-_argparse.addArgument(["--user"], {type: "string", defaultValue: "", nargs: "?", help: "账户"});
-_argparse.addArgument(["--pass"], {type: "string", defaultValue: "", nargs: "?", help: "密码"});
-_argparse.addArgument(["--path"], {type: "string", defaultValue: "", nargs: "?", help: "仓库路径"});
-_argparse.addArgument(["--ui"],   {type: "int",    defaultValue: 1,  nargs: "?", help: "使用界面"});
-_argparse.addArgument(["--flag"], {type: "int",    defaultValue: 1,  nargs: "?", help: "日期标志"});
-_argparse.addArgument(["--odir"], {type: "string", defaultValue: "", nargs: "?", help: "输出目录"});
-_argparse.addArgument(["--edir"], {                defaultValue: [], nargs: "+", help: "排除目录"});
 
 /**-----------------------------------执行函数-----------------------------------*/
 (async function start(){
